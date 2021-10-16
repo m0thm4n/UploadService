@@ -1,4 +1,4 @@
-module UploadService
+module github.com/m0thm4n/UploadService
 
 go 1.17
 

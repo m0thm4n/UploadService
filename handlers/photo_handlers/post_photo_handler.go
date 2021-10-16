@@ -1,8 +1,8 @@
 package photo_handlers
 
 import (
-	"UploadService/domain/photo"
-	"UploadService/handlers/request_models"
+	"github.com/m0thm4n/UploadService/domain/photo"
+	"github.com/m0thm4n/UploadService/handlers/request_models"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

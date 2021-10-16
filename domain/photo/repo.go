@@ -1,7 +1,7 @@
 package photo
 
 import (
-	"UploadService/mongo"
+	"github.com/m0thm4n/UploadService/mongo"
 	"github.com/globalsign/mgo/bson"
 )
 

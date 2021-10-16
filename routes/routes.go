@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"UploadService/domain/photo"
-	"UploadService/handlers/photo_handlers"
+	"github.com/m0thm4n/UploadService/domain/photo"
+	"github.com/m0thm4n/UploadService/handlers/photo_handlers"
 	"github.com/gin-gonic/gin"
 )
 

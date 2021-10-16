@@ -1,7 +1,7 @@
 package photo_handlers
 
 import (
-	"UploadService/domain/photo"
+	"github.com/m0thm4n/UploadService/domain/photo"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"

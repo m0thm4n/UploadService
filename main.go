@@ -1,9 +1,9 @@
 package main
 
 import(
-	"UploadService/domain/photo"
-	"UploadService/mongo"
-	"UploadService/routes"
+	"github.com/m0thm4n/UploadService/domain/photo"
+	"github.com/m0thm4n/UploadService/mongo"
+	"github.com/m0thm4n/UploadService/routes"
 	"github.com/gin-gonic/gin"
 	"os"
 )
