@@ -1,9 +1,27 @@
 version: "0.1"
 services:
-  app:
+  web:
     build:
       dockerfile: Dockerfile
       context: .
       target: dev
     volumes:
       - .:/opt/app/api
+    depends_on:
+      - database
+    container_name: upload-service
+    environment:
+      - PKG_CONFIG_PATH=/usr/lib64/pkgconfig/
+      - 'DB_PORT=27017'
+      - 'DB_HOST=mongodb'
+    ports:
+      - 30:30
+  database:
+    image: mongo
+    environment:
+      MYSQL_ROOT_PASSWORD: 'Secure_Password123!'
+      MYSQL_USER: timmy
+      MYSQL_PASSWORD: 'Password123!'
+    container_name: upload-service-db
+    ports:
+      - 27017:27017
